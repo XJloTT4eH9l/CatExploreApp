@@ -1,0 +1,31 @@
+.search-bar {
+    margin-bottom: 10px;
+    &__input-container {
+        width: 470px;
+        position: relative;
+    }
+    &__icon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__input {
+        width: 100%;
+        padding: 15px 20px;
+        border-radius: var(--br-regular);
+        background-color: var(--white);
+        border: 2px solid;
+        border-color: transparent;
+        outline: none;
+        &:focus {
+            border-color: var(--pink) !important;
+            .search-bar__icon > .button-nav {
+                background-color: var(--pink) !important;
+            }
+        }
+        &:hover {
+            border-color: var(--pink-hover);
+        }
+    }
+}
